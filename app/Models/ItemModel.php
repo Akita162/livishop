@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class ItemModel extends Model
 {
     protected $table = 'item';
+    protected $allowedFields = ['nama', 'img_path', 'harga'];
 
     public function getItem(array $where)
     {
