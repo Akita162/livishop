@@ -9,4 +9,13 @@ class Login extends BaseController
         // return view('welcome_message');
         echo ('Login/index');
     }
+
+    public function authorize($data)
+    {
+        if (!$this->validate($data)) {
+            session()->set('Logged_in', true);
+            $id = model('ModelUser')->getUserId($data['email']);
+            session()->set('user_id', $id);
+        }
+    }
 }

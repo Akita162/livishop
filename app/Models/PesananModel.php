@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class PesananModel extends Model
 {
     protected $table = 'pesanan';
+    protected $allowedFields = ['user', 'item'];
 
     public function getPesanan(array $where)
     {
