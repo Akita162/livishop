@@ -4,11 +4,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class OrderModel extends Model
+class PesananModel extends Model
 {
-    protected $table = 'order';
+    protected $table = 'pesanan';
 
-    public function getOrder(array $where)
+    public function getPesanan(array $where)
     {
         if ($where) return $this->findAll();
 
