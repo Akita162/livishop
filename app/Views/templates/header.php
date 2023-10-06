@@ -13,6 +13,7 @@
 <body>
     <div class="Topbar">
         <div class="container">
+            <img src="/assets/gambar/Heading.png"/>
             <div class="logo"></div>
             <nav>
                 <ul><a href="#">Home</a></ul>
