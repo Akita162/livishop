@@ -6,20 +6,61 @@ body {
 
 .Topbar {
     background-color: #333;
-    color: white;
-    padding: 10px 0;
+    color: black;
     font-family: Arial, sans-serif;
+    font-size: larger;
+    height: 80px;
+    width: 100%;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.list{
+    height: 80px;
+    padding-left: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    height: 80px;
+    line-height: 80px; 
+    color: #fff;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+.fs-1{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 50px;
+    color: #fff;
+  }
+
+
+ li:hover {
+    background: #428ae2;
+  cursor: pointer; 
+  transition: background .5s; 
+}
+
+.custom-image {
+    width: 64px;
+    height: 64px;
 }
