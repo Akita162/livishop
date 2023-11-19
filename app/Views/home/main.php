@@ -7,19 +7,19 @@
         </div>
 
         <div class="col-4">
-            <a href="honkaisr.php">
+            <a href="/game/hsr">
                 <img src="/assets/gambar/Express Pass.png" alt="Express" class="img-express">
             </a>
         </div>
 
         <div class="col-4">
-            <a href="genshin.php">
+            <a href="/game/gi">
                 <img src="/assets/gambar/Genesis Crystal.png" alt="Crystal" class="img-express">
             </a>
         </div>
 
         <div class="col-4">
-            <a href="honkaisr.php">
+            <a href="/game/hsr">
                 <img src="/assets/gambar/Oneiric Shard.png" alt="Shard" class="img-express">
             </a>
         </div>

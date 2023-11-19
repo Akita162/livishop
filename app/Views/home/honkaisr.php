@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-4">
-            <a href="honkaisr.php">
+            <a href="/game/hsr">
                 <img src="/assets/gambar/Express Pass.png" alt="Express" class="img-express">
             </a>
         </div>
