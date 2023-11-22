@@ -75,3 +75,16 @@ nav ul {
   width: 360px;
   height: auto;
 }
+
+.img-express-big {
+  width: 650px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-small {
+  width: 250px;
+  height: auto;
+}
