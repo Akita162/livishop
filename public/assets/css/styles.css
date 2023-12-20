@@ -88,3 +88,10 @@ nav ul {
   width: 250px;
   height: auto;
 }
+
+#inputForm {
+  padding-top: 25px;
+  width: 300px; /* Sesuaikan lebar form dengan kebutuhan Anda */
+  margin: 0 auto; /* Ini akan membuat form berada di tengah */
+  text-align: center; /* Untuk mengatur teks di dalam form menjadi rata tengah */
+}

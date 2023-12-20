@@ -35,6 +35,25 @@
             </a>
         </div>
 
+        <form id="inputForm">
+    <label for="accountId">Masukkan UID Anda:</label><br>
+    <input type="text" id="accountId" name="accountId"><br><br>
+
+    <label for="regions">Pilih region:</label><br>
+    <input type="checkbox" id="asiaCheckbox" name="region" value="Asia">
+    <label for="asiaCheckbox">Asia</label><br>
+    <input type="checkbox" id="europeCheckbox" name="region" value="Eropa">
+    <label for="europeCheckbox">Eropa</label><br>
+    <input type="checkbox" id="usCheckbox" name="region" value="AS">
+    <label for="usCheckbox">AS</label><br><br>
+
+    <input type="submit" value="Submit">
+    </form>
+
     </div>
+
+   
+
+
 </div>
 <?= $this->include('templates/footer') ?>
