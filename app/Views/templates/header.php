@@ -29,6 +29,15 @@
             </nav>
 
             </div>
+            <div class="list2">
+            <nav>
+            <ul>
+                <li><a href="/home/main">Sign up</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            </nav>
+
+            </div>
             
         </div>
     </div>
