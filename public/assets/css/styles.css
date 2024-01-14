@@ -100,7 +100,3 @@ nav ul {
   margin: 0 auto; /* Ini akan membuat form berada di tengah */
   text-align: center; /* Untuk mengatur teks di dalam form menjadi rata tengah */
 }
-
-.hiddenForm {
-  display: none;
-}

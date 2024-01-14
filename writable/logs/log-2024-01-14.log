@@ -1,0 +1,87 @@
+CRITICAL - 2024-01-14 06:46:55 --> Invalid file: "pay/dexpressana.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pay/dexpressana.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pay/dexpressana', [], true)
+ 3 APPPATH\Controllers\Pay.php(9): view('pay/dexpressana')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 06:47:17 --> Invalid file: "pay/expressana.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pay/expressana.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pay/expressana', [], true)
+ 3 APPPATH\Controllers\Pay.php(9): view('pay/expressana')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 06:47:25 --> Invalid file: "pay/expressana.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pay/expressana.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pay/expressana', [], true)
+ 3 APPPATH\Controllers\Pay.php(9): view('pay/expressana')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 08:06:14 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(180): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('pay/', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 08:11:48 --> Undefined property: CodeIgniter\View\View::$security
+in APPPATH\Views\home\honkaisr.php on line 53.
+ 1 APPPATH\Views\home\honkaisr.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$security', 'C:\\xampp2\\htdocs\\livishop\\app\\Views\\home\\honkaisr.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\livishop\\app\\Views\\home\\honkaisr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/honkaisr', [], true)
+ 5 APPPATH\Controllers\Game.php(14): view('home/honkaisr')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Game->hsr()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Game))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 08:11:53 --> Undefined property: CodeIgniter\View\View::$security
+in APPPATH\Views\home\honkaisr.php on line 53.
+ 1 APPPATH\Views\home\honkaisr.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$security', 'C:\\xampp2\\htdocs\\livishop\\app\\Views\\home\\honkaisr.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\livishop\\app\\Views\\home\\honkaisr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/honkaisr', [], true)
+ 5 APPPATH\Controllers\Game.php(14): view('home/honkaisr')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Game->hsr()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Game))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 08:20:45 --> Undefined property: CodeIgniter\View\View::$security
+in APPPATH\Views\home\honkaisr.php on line 53.
+ 1 APPPATH\Views\home\honkaisr.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$security', 'C:\\xampp2\\htdocs\\livishop\\app\\Views\\home\\honkaisr.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\livishop\\app\\Views\\home\\honkaisr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/honkaisr', [], true)
+ 5 APPPATH\Controllers\Game.php(14): view('home/honkaisr')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Game->hsr()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Game))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-14 08:36:45 --> Undefined array key "region"
+in APPPATH\Views\pay\expressdana.php on line 12.
+ 1 APPPATH\Views\pay\expressdana.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "region"', 'C:\\xampp2\\htdocs\\livishop\\app\\Views\\pay\\expressdana.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\livishop\\app\\Views\\pay\\expressdana.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pay/expressdana', [], true)
+ 5 APPPATH\Controllers\Pay.php(9): view('pay/expressdana')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')

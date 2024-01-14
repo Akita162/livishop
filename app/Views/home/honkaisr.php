@@ -17,53 +17,89 @@
             <h2>Pilih Metode Pembayaran</h2>
         </div>
 
-        <div class="col-4" onclick="showForm('inputForm')">
-            <a href="#">
-                <img src="/assets/gambar/logo dana.jpg" alt="Heading" class="img-small">
-            </a>
+        <div class="row">
+            <div class="col-4">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#bayarModal"
+                    data-pay-method="dana">
+                    <img src="/assets/gambar/logo dana.jpg" alt="Heading" class="img-small">
+                </button>
+            </div>
+
+            <div class="col-4">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#bayarModal"
+                    data-pay-method="gopay">
+                    <img src="/assets/gambar/logo gopay.jpg" alt="Heading" class="img-small">
+                </button>
+            </div>
+
+            <div class="col-4">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#bayarModal"
+                    data-pay-method="bca">
+                    <img src="/assets/gambar/Logo BCA_Biru.png" alt="Heading" class="img-small">
+                </button>
+            </div>
+
         </div>
 
-        <div class="col-4" onclick="showForm('inputForm')">
-            <a href="#">
-                <img src="/assets/gambar/logo gopay.jpg" alt="Heading" class="img-small">
-            </a>
+
+
+        <div class="modal fade" id="bayarModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Isi Data</h1>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="\pay\">
+                            <input type="hidden" name="paymethod" id="metodePembayaran" value="">
+                            <div class="mb-3">
+                                <label for="inputUid" class="form-label">UID Anda</label>
+                                <input type="input" name="uid" class="form-control" id="inputUid" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="inputRegion" class="form-label">Region Akun</label>
+                                <select name="region" class="form-select" id="inputRegion">
+                                    <option value="Asia">Asia</option>
+                                    <option value="Eropa">Eropa</option>
+                                    <option value="Amerika">Amerika</option>
+                                    <option value="Hongkong">Hongkong</option>
+                                </select>
+                            </div>
+
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-
-        <div class="col-4" onclick="showForm('inputForm')">
-            <a href="#">
-                <img src="/assets/gambar/Logo BCA_Biru.png" alt="Heading" class="img-small">
-            </a>
-        </div>
-
-    <form id="inputForm" class="hiddenForm">
-        <label for="accountId">Masukkan UID Anda:</label><br>
-        <input type="text" id="accountId" name="accountId"><br><br>
-
-        <label for="regions">Pilih region:</label><br>
-        <input type="checkbox" id="asiaCheckbox" name="region" value="Asia">
-        <label for="asiaCheckbox">Asia</label><br>
-        <input type="checkbox" id="europeCheckbox" name="region" value="Eropa">
-        <label for="europeCheckbox">Eropa</label><br>
-        <input type="checkbox" id="usCheckbox" name="region" value="AS">
-        <label for="usCheckbox">AS</label><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <script>
-    function showForm(formId) {
-        // Mengambil referensi form berdasarkan ID
-        const form = document.getElementById(formId);
-
-        // Menampilkan form yang terkait dengan gambar yang diklik
-        form.classList.remove('hiddenForm');
-    }
-    </script>
-
     </div>
 
-   
+</div>
+</div>
 
+<script>
+    const exampleModal = document.getElementById('bayarModal')
+    if (exampleModal) {
+        exampleModal.addEventListener('show.bs.modal', event => {
+            // Button that triggered the modal
+            const button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            const payment = button.getAttribute('data-pay-method')
+            // If necessary, you could initiate an Ajax request here
+            // and then do the updating in a callback.
+
+            // Update the modal's content.
+            const modalBodyInput = exampleModal.querySelector('.modal-body #metodePembayaran')
+
+            modalBodyInput.value = payment
+        })
+    }
+</script>
 
 </div>
 <?= $this->include('templates/footer') ?>

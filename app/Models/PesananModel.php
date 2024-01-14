@@ -11,8 +11,14 @@ class PesananModel extends Model
 
     public function getPesanan(array $where)
     {
-        if ($where) return $this->findAll();
+        if ($where)
+            return $this->findAll();
 
         return $this->where($where)->getResultArray();
+    }
+
+    protected function setPesanan($uid, $region)
+    {
+        return $this->db->insert;
     }
 }
