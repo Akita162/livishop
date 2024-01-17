@@ -15,4 +15,9 @@ class ItemModel extends Model
 
         return $this->where($where)->getResultArray();
     }
+
+    function getKategori(array $where)
+    {
+        return $this->db->table('kategori')->getWhere($where);
+    }
 }
