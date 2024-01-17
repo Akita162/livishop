@@ -17,8 +17,8 @@ class PesananModel extends Model
         return $this->where($where)->getResultArray();
     }
 
-    protected function setPesanan($uid, $region)
+    protected function setPesanan(array $data)
     {
-        return $this->db->insert;
+        return $this->insert($data);
     }
 }

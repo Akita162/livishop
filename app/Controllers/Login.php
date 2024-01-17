@@ -6,8 +6,7 @@ class Login extends BaseController
 {
     public function index()
     {
-        // return view('login');
-        echo ('Login/index');
+        return view('login');
     }
 
     public function authorize($data)
