@@ -1,0 +1,37 @@
+CRITICAL - 2024-01-21 14:13:57 --> Too few arguments to function App\Models\ItemModel::getItem(), 0 passed in D:\xampp\htdocs\livishop\app\Controllers\Home.php on line 12 and exactly 1 expected
+in APPPATH\Models\ItemModel.php on line 12.
+ 1 APPPATH\Controllers\Home.php(12): App\Models\ItemModel->getItem()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-21 14:15:06 --> Call to undefined method App\Models\ItemModel::getResultArray
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Models\ItemModel.php(16): CodeIgniter\Model->__call('getResultArray', [])
+ 2 APPPATH\Controllers\Home.php(12): App\Models\ItemModel->getItem()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-21 15:03:09 --> Call to undefined method App\Models\ItemModel::getResultArray
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Models\ItemModel.php(15): CodeIgniter\Model->__call('getResultArray', [])
+ 2 APPPATH\Controllers\Home.php(14): App\Models\ItemModel->getItems()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-21 15:29:19 --> Call to undefined function number_to_currency()
+in APPPATH\Views\home.php on line 76.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(15): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\livishop\\public\\index.php')

@@ -16,20 +16,23 @@ class Payment extends BaseController
     public function index()
     {
         $data = [
-            'uid' => $this->request->getPost('uid'),
-            'region' => $this->request->getPost('region'),
+            'uid' => $_POST['uid'],
+            'region' => $_POST['region'],
+            'item' => $_POST['item'],
         ];
-        // $this->pesananModel->setPesanan($data);
 
-        switch ($_GET['paymethod']) {
+        switch ($_POST['paymethod']) {
             case 'dana':
+                $this->pesananModel->setPesanan($data);
                 return view('payment/dana');
             case 'gopay':
-                return;
+                $this->pesananModel->setPesanan($data);
+                return view('payment/gopay');
             case 'bca':
-                return;
+                $this->pesananModel->setPesanan($data);
+                return view('payment/bca');
             default:
-                return redirect()->back();
+                return view('payment/method');
         }
     }
 }

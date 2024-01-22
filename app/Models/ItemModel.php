@@ -7,17 +7,19 @@ use CodeIgniter\Model;
 class ItemModel extends Model
 {
     protected $table = 'item';
-    protected $allowedFields = ['nama', 'img_path', 'harga'];
+    protected $allowedFields = ['nama', 'harga'];
 
-    public function getItem(array $where)
+    public function getItems()
     {
-        if ($where) return $this->findAll();
-
-        return $this->where($where)->getResultArray();
+        $result = [
+            'HSR' => $this->db->table($this->table)->getWhere(['kategori' => 1])->getResultArray(),
+            'GI' => $this->db->table($this->table)->getWhere(['kategori' => 2])->getResultArray(),
+        ];
+        return $result;
     }
 
-    function getKategori(array $where)
+    function getKategori($id)
     {
-        return $this->db->table('kategori')->getWhere($where);
+        return $this->db->table('kategori')->getWhere(['id' => $id]);
     }
 }
