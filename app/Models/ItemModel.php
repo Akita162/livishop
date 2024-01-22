@@ -9,6 +9,11 @@ class ItemModel extends Model
     protected $table = 'item';
     protected $allowedFields = ['nama', 'harga'];
 
+    function itemInfo($id)
+    {
+        return $this->find($id);
+    }
+
     public function getItems()
     {
         $result = [

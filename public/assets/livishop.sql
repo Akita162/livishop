@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2023 at 01:37 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jan 22, 2024 at 04:58 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,12 +28,36 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `item` (
-  `id` tinyint(3) UNSIGNED ZEROFILL NOT NULL,
+  `id` tinyint(3) UNSIGNED NOT NULL,
   `kategori` tinyint(3) UNSIGNED NOT NULL,
   `nama` varchar(64) NOT NULL,
-  `img_path` varchar(1024) NOT NULL,
   `harga` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `item`
+--
+
+INSERT INTO `item` (`id`, `kategori`, `nama`, `harga`) VALUES
+(1, 1, 'Express Pass', 57000),
+(2, 1, '60 Oneiric Shard', 13000),
+(3, 1, '300 Oneiric Shard', 57000),
+(4, 1, '980 Oneiric Shard', 172000),
+(5, 1, '1980 Oneiric Shard', 395000),
+(6, 1, '3280 Oneiric Shard', 609000),
+(7, 1, '6480 Oneiric Shard', 1218000),
+(8, 2, 'Welkin Moon', 57000),
+(9, 2, 'Welkin Moon (2 Bulan)', 114000),
+(10, 2, 'Welkin Moon (3 Bulan)', 171000),
+(11, 2, 'Welkin Moon (4 Bulan)', 228000),
+(12, 2, 'Welkin Moon (5 Bulan)', 286000),
+(13, 2, 'Welkin Moon (6 Bulan)', 343000),
+(14, 2, '60 Genesis Crystal', 11000),
+(15, 2, '300 Genesis Crystal', 57000),
+(16, 2, '980 Genesis Crystal', 171000),
+(17, 2, '1980 Genesis Crystal', 372000),
+(18, 2, '3280 Genesis Crystal', 572000),
+(19, 2, '6480 Genesis Crystal', 1144000);
 
 -- --------------------------------------------------------
 
@@ -46,6 +70,14 @@ CREATE TABLE `kategori` (
   `nama` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id`, `nama`) VALUES
+(1, 'Honkai Star Rail'),
+(2, 'Genshin Impact');
+
 -- --------------------------------------------------------
 
 --
@@ -54,26 +86,19 @@ CREATE TABLE `kategori` (
 
 CREATE TABLE `pesanan` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `user` bigint(20) UNSIGNED NOT NULL,
+  `uid` varchar(9) NOT NULL,
+  `region` enum('AP','EU','US','CN') NOT NULL,
   `item` tinyint(3) UNSIGNED NOT NULL,
   `tanggal` datetime NOT NULL DEFAULT current_timestamp(),
   `confirmed` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `user`
+-- Dumping data for table `pesanan`
 --
 
-CREATE TABLE `user` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `email` varchar(128) NOT NULL,
-  `password` varchar(1024) NOT NULL,
-  `activated` tinyint(1) NOT NULL DEFAULT 0,
-  `last_login` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+INSERT INTO `pesanan` (`id`, `uid`, `region`, `item`, `tanggal`, `confirmed`) VALUES
+(1, '123456789', 'AP', 13, '2024-01-22 22:56:32', 1);
 
 --
 -- Indexes for dumped tables
@@ -97,16 +122,7 @@ ALTER TABLE `kategori`
 --
 ALTER TABLE `pesanan`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `user` (`user`),
   ADD KEY `item` (`item`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -116,19 +132,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
@@ -144,8 +154,7 @@ ALTER TABLE `item`
 -- Constraints for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  ADD CONSTRAINT `item_id_FK` FOREIGN KEY (`item`) REFERENCES `item` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `user_id_FK` FOREIGN KEY (`user`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `item_id_FK` FOREIGN KEY (`item`) REFERENCES `item` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

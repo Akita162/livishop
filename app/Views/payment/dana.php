@@ -4,16 +4,15 @@
     <div class="container">
       <div class="col-6 ">
         <h5>Akun Dana : 123123123123</h5>
+        <h5>Atas Nama : LiViuS</h5>
       </div>
 
       <div class="col-6">
-        <h5>Bila sudah melakukan pembayaran, klik OK dan cek Inbox untuk mengecek
-          informasi apakah sudah masuk apa belum </h5>
         <h5>CATATAN PENTING : JANGAN KEMBALI KE HALAMAN UTAMA SEBELUM MENYELESAIKAN PEMBAYARAN
           BILA TIDAK INGIN MELAKUKAN INPUT DATA ULANG
         </h5>
 
-        <button class="btn" onclick="location.href = '/';">OK</button>
+        <button class="btn btn-primary" onclick="location.href = '/';">OK</button>
       </div>
     </div>
 

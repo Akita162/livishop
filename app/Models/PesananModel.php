@@ -16,9 +16,4 @@ class PesananModel extends Model
 
         return $this->where($where)->getResultArray();
     }
-
-    protected function setPesanan(array $data)
-    {
-        return $this->insert($data);
-    }
 }
