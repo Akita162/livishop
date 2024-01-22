@@ -9,6 +9,10 @@
       <div class="col-6">
         <h5>Bila sudah melakukan pembayaran, klik OK dan cek Inbox untuk mengecek
           informasi apakah sudah masuk apa belum </h5>
+        <h5>CATATAN PENTING : JANGAN KEMBALI KE HALAMAN UTAMA SEBELUM MENYELESAIKAN PEMBAYARAN
+          BILA TIDAK INGIN MELAKUKAN INPUT DATA ULANG
+        </h5>
+
         <button class="btn" onclick="location.href = '/';">OK</button>
       </div>
     </div>

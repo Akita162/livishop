@@ -1,0 +1,56 @@
+WARNING - 2024-01-15 00:22:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pay::$pesananModel is deprecated in APPPATH\Controllers\Pay.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Pay->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-15 00:22:02 --> Undefined array key "paymethod"
+in APPPATH\Controllers\Pay.php on line 22.
+ 1 APPPATH\Controllers\Pay.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "paymethod"', 'C:\\xampp2\\htdocs\\livishop\\app\\Controllers\\Pay.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+WARNING - 2024-01-15 00:22:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pay::$pesananModel is deprecated in APPPATH\Controllers\Pay.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Pay->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-15 00:22:40 --> Undefined array key "paymenthod"
+in APPPATH\Controllers\Pay.php on line 22.
+ 1 APPPATH\Controllers\Pay.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "paymenthod"', 'C:\\xampp2\\htdocs\\livishop\\app\\Controllers\\Pay.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+WARNING - 2024-01-15 00:23:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pay::$pesananModel is deprecated in APPPATH\Controllers\Pay.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Pay->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-15 00:23:09 --> Undefined array key "paymentmethod"
+in APPPATH\Controllers\Pay.php on line 22.
+ 1 APPPATH\Controllers\Pay.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "paymentmethod"', 'C:\\xampp2\\htdocs\\livishop\\app\\Controllers\\Pay.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+WARNING - 2024-01-15 00:23:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Pay::$pesananModel is deprecated in APPPATH\Controllers\Pay.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Pay->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
+CRITICAL - 2024-01-15 00:23:35 --> Undefined array key "paymethod"
+in APPPATH\Controllers\Pay.php on line 22.
+ 1 APPPATH\Controllers\Pay.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "paymethod"', 'C:\\xampp2\\htdocs\\livishop\\app\\Controllers\\Pay.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pay->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pay))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\public\\index.php')
