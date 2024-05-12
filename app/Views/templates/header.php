@@ -13,31 +13,31 @@
 <body>
     <div class="Topbar">
         <div class="container">
-            
+
             <span class="fs-1">
-            <img src="/assets/gambar/Web Logo.png" alt="image" class="custom-image">
-            LiviShop
+                <img src="/assets/gambar/Web Logo.png" alt="image" class="custom-image">
+                LiviShop
             </span>
             <div class="list">
-            <nav>
-            <ul>
-                <li><a href="/home/main">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Inbox</a></li>
-            </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="/home/inbox/">Inbox</a></li>
+                    </ul>
+                </nav>
 
             </div>
             <div class="list2">
-            <nav>
-            <ul>
-                <li><a href="/home/main">Sign up</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="/home/main">Sign up</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
 
             </div>
-            
+
         </div>
     </div>

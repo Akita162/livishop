@@ -15,4 +15,10 @@ class Home extends BaseController
         $data['items'] = $item->getItems();
         return view('home', $data);
     }
+
+    public function inbox()
+    {
+        $data = [];
+        return view('inbox', $data);
+    }
 }
