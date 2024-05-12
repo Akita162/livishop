@@ -2,49 +2,45 @@
 
 
 <div class="container text-center">
-    <h2>Pesanan Anda</h2>
+    <div class="row w-100">
+        <div class="col-12">
+            <h2>Pesanan Anda</h2>
+        </div>
 
-    <form action="home\delete" method="post">
-
-        <ul>
-
-            <?php foreach ($pesanan as $p) { ?>
-                <center>
-                    <li>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-
-                        <div class="mb-3 col-12">
-
-                            <div class="justify-content-center">
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-muted">UID:</h6>
-                                        <span>
-                                            <?= $p['uid']; ?>
-                                        </span>
-                                        <h6 class="card-subtitle mb-2 text-muted">Region:</h6>
-                                        <span>
-                                            <?= $p['region']; ?>
-                                        </span>
-                                        <p class="card-text">Pesanan:</p>
-                                        <span>
-                                            <?= $p['item']; ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </center>
-            <?php } ?>
-        </ul>
-    </form>
+        <div class="col-12">
+            <form method="post">
+                <button type="submit" class="btn btn-primary w-25">
+                    Hapus Pesanan
+                </button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pilih</th>
+                            <th scope="col">Pesanan</th>
+                            <th scope="col">UID</th>
+                            <th scope="col">Region</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($pesanan as $p) { ?>
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" name="IDP[]" type="checkbox" value="<?= $p['id']; ?>" id="Order<?= $p['id']; ?>">
+                                </td>
+                                <td>
+                                    <label class="form-check-label" for="Order<?= $p['id']; ?>">
+                                        <?= $p['nama']; ?>
+                                    </label>
+                                </td>
+                                <td><?= $p['uid']; ?></td>
+                                <td><?= $p['region']; ?></td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
 </div>
-
-<center>
-    <button type="submit" class="btn btn-primary w-25">
-        Hapuskan pesanan
-    </button>
-</center>
 
 <?= $this->include('templates/footer') ?>

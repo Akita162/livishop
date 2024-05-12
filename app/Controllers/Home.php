@@ -5,8 +5,6 @@ namespace App\Controllers;
 use App\Models\ItemModel;
 use App\Models\PesananModel;
 
-use function PHPSTORM_META\map;
-
 class Home extends BaseController
 {
     public function index(): string
@@ -20,8 +18,15 @@ class Home extends BaseController
     public function inbox()
     {
         $pesanan = new PesananModel();
-        dd($pesanan->getInvoice());
-        $data['pesanan'] = $pesanan->getPesanan();
+        if ($this->request->getPost('IDP') !== null) {
+            $delete = $this->request->getPost('IDP');
+            foreach ($delete as $id) {
+                if (is_numeric($id)) $pesanan->delete($id);
+            }
+            return redirect()->to('/');
+        }
+
+        $data['pesanan'] = $pesanan->getInvoice();
         return view('inbox', $data);
     }
 }
