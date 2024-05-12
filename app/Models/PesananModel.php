@@ -14,6 +14,11 @@ class PesananModel extends Model
         return $this->findAll();
     }
 
+    function getInvoice()
+    {
+        return $this->select('pesanan.id, uid, region, item.nama')->join('item', 'pesanan.item = item.id')->get()->getResultArray();
+    }
+
     // public function getPesananUser($UserID) {
     //     return $this->where(['UserID' => $UserID])->getResultArray();
     // }

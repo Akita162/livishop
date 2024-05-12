@@ -20,6 +20,7 @@ class Home extends BaseController
     public function inbox()
     {
         $pesanan = new PesananModel();
+        dd($pesanan->getInvoice());
         $data['pesanan'] = $pesanan->getPesanan();
         return view('inbox', $data);
     }
