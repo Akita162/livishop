@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\ItemModel;
+use App\Models\PesananModel;
 
 use function PHPSTORM_META\map;
 
@@ -18,7 +19,8 @@ class Home extends BaseController
 
     public function inbox()
     {
-        $data = [];
+        $pesanan = new PesananModel();
+        $data['pesanan'] = $pesanan->getPesanan();
         return view('inbox', $data);
     }
 }

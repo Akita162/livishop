@@ -9,11 +9,12 @@ class PesananModel extends Model
     protected $table = 'pesanan';
     protected $allowedFields = ['uid', 'region', 'item'];
 
-    public function getPesanan(array $where)
+    public function getPesanan()
     {
-        if ($where)
-            return $this->findAll();
-
-        return $this->where($where)->getResultArray();
+        return $this->findAll();
     }
+
+    // public function getPesananUser($UserID) {
+    //     return $this->where(['UserID' => $UserID])->getResultArray();
+    // }
 }
