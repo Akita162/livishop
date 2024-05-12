@@ -1,0 +1,12 @@
+CRITICAL - 2024-05-12 07:14:10 --> Undefined variable $items
+in APPPATH\Views\inbox.php on line 26.
+ 1 APPPATH\Views\inbox.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp2\\htdocs\\livishop\\livishop\\app\\Views\\inbox.php', 26)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\livishop\\livishop\\app\\Views\\inbox.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('inbox', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('inbox', [])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->inbox()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\livishop\\livishop\\public\\index.php')
